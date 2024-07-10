@@ -9,7 +9,8 @@ app.use(cors('*'))
 
 app.use(express.json())
 
-
+const usersRouter = require('./router/user/user')
+app.use('/user',usersRouter)
 
 
 
